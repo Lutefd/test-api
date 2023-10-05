@@ -1,9 +1,9 @@
 # Use the official Go image from the DockerHub
-FROM golang:1.18
+FROM golang:1.21.1
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 RUN go mod download
 
